@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-
 *{ /*Selects all elements, css declarations*/
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 
+/*Menu*/
 #logo{
     margin-right: auto;
     padding: 0 2rem; /*top+bottom=0, left+right=1rem*/
@@ -55,5 +54,94 @@ nav{
     .sub-menu a:hover{ /*屏幕缩小到900px后，sub-menu的蓝线下移*/
         border-top: 0.3rem solid white;
         border-bottom: 0.3rem solid #0065FC;
+    }
+}
+
+/*Section Search-tags*/
+.search-tags{
+    padding: 2rem 2rem;
+}
+
+.search-tags h1, p{
+    font-family:'Raleway', sans-serif;
+}
+
+.search-bar{
+display: flex;
+padding: 1rem 0;
+}
+
+
+.search-bar .fa-map-marker-alt{
+    padding: 1rem 1rem;
+    background-color:  #f2f2f2;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-bar input{
+    width: 15rem;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #f2f2f2;
+    overflow: hidden; /*缩小浏览器时，搜索栏也一起变短*/
+}
+
+.search-bar input:focus{/*Lorsqu'on clique sur la zone input, la bordure est ombrée */
+    box-shadow: 0 3px 3px 3px gray;
+}
+
+.fa-search{
+    display: none;
+}
+
+.search-bar button{
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0; 
+    padding: 15px;
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.search-bar button:hover{/*Lorsque la souris est placée sur le bouton, la couleur du bouton devient plus claire et légèrement plus grande */
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+@media(max-width:410px){
+.search-bar .search-text{
+    display: none;
+}
+.fa-search{
+    display: inline;
+    color: white;
+}
+
+::placeholder {
+    color: transparent; /*缩小时搜索栏中的字消失*/
+}
+}
+
+
+/*filter*/
+.filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media(max-width:440px){
+
+    .search-bar button{
+        
+    }
+
+    .filter{
+        display: flex;
+        flex-direction: column;
+        
     }
 }
