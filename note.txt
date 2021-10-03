@@ -1,0 +1,1 @@
+1. 如何选中代码并且在它们外部加其他balise：在选中项目外加balise = ctrl + shift + p => wrap with abbreviation =>输入要加的balise即可
