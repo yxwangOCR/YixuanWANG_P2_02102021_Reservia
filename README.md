@@ -19,3 +19,12 @@
 6. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.</br>
 7. La police du site est Raleway.</br> 
 </br>
+
+**Maquette Desktop:**</br> 
+![Desktop - 1](https://user-images.githubusercontent.com/91176159/135743846-93f311d8-6f7b-4667-bde2-ded05a9b355f.png)
+</br>
+</br>
+</br> 
+**Maquette Mobile:**</br> 
+![iPhone 8 - 1](https://user-images.githubusercontent.com/91176159/135743864-523f10cd-3b95-43eb-b743-89987d4c637d.png)
+
