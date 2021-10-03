@@ -124,12 +124,13 @@ padding: 1rem 0;
 }
 }
 
-/*filter*/
+/*La liste des filtres*/
 .filter-list{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     font-family: 'Raleway', sans-serif;
+    align-items: center;
 }
 
 .filter{
@@ -150,7 +151,6 @@ padding: 1rem 0;
     padding: 0 1rem;
 }
 
-
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     color: #0065FC;
     background-color: #DEEBFF;
@@ -161,13 +161,7 @@ padding: 1rem 0;
     margin: -2px;/*隐藏圆形外的浅灰色边框*/
 }
 
-@media(max-width:440px){
-    .filter-list{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
+/*information + icon info*/
 .information{
     display: flex;
     align-items: center;
@@ -190,13 +184,55 @@ padding: 1rem 0;
     justify-content: center;
 }
 
-@media(max-width:440px){
-    .information p{
-        font-size: 0.6rem;
-    }
+/*@media(max-width:440px){
     .fa-info{
         width: 1.2rem;
-        height: 1.2rem;
+        height: 1.2rem; 
         font-size: 9px;
     }
+    .information p{
+        font-size: 0.7rem;
+    }
+}*/
+
+.recommendation-list{
+    border: 2px solid red;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+
+.housing-list{
+    border: 2px solid blue;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-list{
+    border: 2px solid orange;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media(max-width){
+    .popular-list{
+        order: -1;
+    }
+}
+
+
+.housing-list .housing-card{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.housing-list .housing-card img{
+    width: 80px;
+    height: 80px;
+}
+
