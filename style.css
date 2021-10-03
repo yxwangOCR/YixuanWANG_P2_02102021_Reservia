@@ -107,7 +107,7 @@ padding: 1rem 0;
 
 .search-bar button:hover{/*Lorsque la souris est placée sur le bouton, la couleur du bouton devient plus claire et légèrement plus grande */
     opacity: 0.8;
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 @media(max-width:410px){
@@ -124,24 +124,79 @@ padding: 1rem 0;
 }
 }
 
-
 /*filter*/
-.filter{
+.filter-list{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.filter{
+    border: 2px solid #f2f2f2;
+    border-radius:2rem;
+    display: flex;
+    align-items: center;   
+}
+
+.filter:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+    transform: scale(1.1);
+}
+
+.filter span{
+    font-weight: bold;
+    padding: 0 1rem;
 }
 
 
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%; /*a cercle*/
+    margin: -2px;/*隐藏圆形外的浅灰色边框*/
+}
+
 @media(max-width:440px){
-
-    .search-bar button{
-        
-    }
-
-    .filter{
+    .filter-list{
         display: flex;
         flex-direction: column;
-        
+    }
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.information p{
+    font-size: 0.8rem;
+}
+
+.fa-info{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color:#0065FC;
+    border: 2px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:440px){
+    .information p{
+        font-size: 0.6rem;
+    }
+    .fa-info{
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 9px;
     }
 }
