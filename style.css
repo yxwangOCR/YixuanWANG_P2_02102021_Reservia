@@ -191,89 +191,139 @@ padding: 1rem 0;
 .recommendation-list{
     display: flex;
     padding: 2rem;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 /*Hébergement à Marseille*/
 .housing-list{
-    border: 2px solid blue;
     background-color: #f2f2f2;
-    flex-basis: 66.5%;
+    flex-basis: 66%;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-    justify-content: space-around;
     border-radius: 22px;
     gap: 0.5rem;
     padding:1rem;
 }
 
-.housing-list .housing-card{
-    width: 100%;
-    border: 2px solid blue; 
+.housing-card-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.housing-list .housing-card-list .housing-card{
+    
     background-color: white;
     border-radius: 15px;
-    flex-direction: column;
     flex-basis: 30%;
     padding: 0.2rem;
+    box-shadow: 0 0 10px;/*offset-x | offset-y | blur-radius*/
 }
 
-.housing-list .housing-card img{
+.housing-list .housing-card-list .housing-card img{
     width: 100%;
-    height: 70%;
+    height: 11rem;
     border-radius: 15px 15px 0 0;
-    
+    object-fit: cover;
+
 }
 
-.housing-list .housing-card-description{
+.housing-card .housing-card-description{
     padding: 0 1rem; /*卡片文字与图片之间的top距离和左右距离*/
     margin-bottom: 1rem;
+}
+
+.blue-rating{
+    color:#0065FC;
+}
+.gray-rating{
+    color:lightgrey;
+}
+
+.housing-list h3{
+    padding-bottom: 1rem;
+    margin-left:1rem;
 }
 
 .housing-list a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    padding-top: 1rem;
+    margin-left:1rem;
 }
 
+
+
 /*Les plus polulaires*/
+
 .popular-list{
-    border: 2px solid orange;
     background-color: #f2f2f2;
     flex-basis: 33.5%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 1rem;
     border-radius: 22px;
 }
 .popular-list .popular-card{
-    width: 100%;
-    height: 100%;
+    min-width: 11rem;
+    min-height: 10rem;
     display: flex;
     padding: 0.3rem;
     margin: 1rem auto;
-    border:1px solid #0065FC;
     background-color: white;
     border-radius: 15px;
 }
 
 .popular-list .popular-card img{
-    flex-basis: 100%;
-    width: 100%;
+    width: 40%;
+    height: auto;
     border-radius: 12px 0 0 12px;
 }
 
 .popular-list .popular-card-description{
     flex-direction: column;
-    padding: 1rem;   
+    padding: 1rem; 
+    flex-basis: 100%; /*图片尺寸由大小不一变成一样大*/  
 }
+
+.popular-title{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+
 
 @media(max-width:900px){
 
     .recommendation-list{
         flex-direction: column;
     }
+
+    .housing-list{
+        background-color: white;
+        flex-direction: column;
+    }
     .popular-list{
         order: -1;
+        background-color: pink;/*Test*/
     }
+
+    .popular-list .popular-card{
+        width: 100%;
+        height: 10rem;
+    }
+
+    .housing-card-list{
+        flex-direction: column;
+    }
+
+    .housing-list .housing-card-list .housing-card img{
+        object-fit: top;
+    }
+
+
 }
