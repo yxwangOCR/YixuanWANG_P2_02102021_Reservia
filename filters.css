@@ -56,14 +56,3 @@
     align-items: center;
     justify-content: center;
 }
-
-/*@media(max-width:440px){
-    .fa-info{
-        width: 1.2rem;
-        height: 1.2rem; 
-        font-size: 9px;
-    }
-    .information p{
-        font-size: 0.7rem;
-    }
-}*/

@@ -1,11 +1,10 @@
-
+/*Hébergement à Marseille*/
 .recommendation-list{
     display: flex;
     padding: 2rem;
     gap: 1rem;
 }
 
-/*Hébergement à Marseille*/
 .housing-list{
     background-color: #f2f2f2;
     display: flex;
@@ -86,6 +85,6 @@
     }
 
    .housing-card img{
-        object-fit: top;
+        object-fit: cover;
     }
 }

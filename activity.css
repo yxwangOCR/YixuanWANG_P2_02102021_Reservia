@@ -1,7 +1,4 @@
 /*Activité à Marseille*/
-
-
-
 .activities-container{
     display: flex;
     flex:1 1 auto;
@@ -21,7 +18,6 @@
     justify-content: flex-start;
     width: 45%;/*为什么没有casser Flex？*/
 }
-
 .activity-card{
     display: flex;
     flex:1 1 auto;
@@ -48,9 +44,9 @@
 }
 
 .activity-card-title{
-    height: calc(60px-1rem);
-    padding: 1rem;
-    font-weight: bold;
+    height: calc(100%-1rem);/*Parse Error dans validator*/
+    padding: 2rem;
+    font-weight: bold; 
 }
 
 .col-four{
@@ -83,8 +79,7 @@
     .activity-card-image{
        width: 100%;
        height: 12rem;
-       object-fit: top;
+       object-fit:cover;
     }
-
 }
 
