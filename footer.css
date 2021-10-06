@@ -24,7 +24,6 @@ footer h4{
 }
 
 @media (max-width:900px){
-
     .footer-list{
         flex-direction:column;
         gap:1rem

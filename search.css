@@ -49,6 +49,7 @@ padding: 1rem 0;
 @media(max-width:410px){
 .search-bar .search-text{
     display: none;
+  
 }
 .fa-search{
     display: inline;
