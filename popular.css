@@ -1,0 +1,58 @@
+
+/*Les plus polulaires*/
+
+.popular-list{
+    background-color: #f2f2f2;
+    flex-basis: 33.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    border-radius: 22px;
+}
+.popular-list .popular-card{
+    min-width: 11rem;
+    min-height: 10rem;
+    display: flex;
+    padding: 0.3rem;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px;/*offset-x | offset-y | blur-radius*/
+}
+
+.popular-list .popular-card:hover{
+    transform: scale(1.02);
+}
+
+.popular-list .popular-card img{
+    width: 40%;
+    height: auto;
+    border-radius: 12px 0 0 12px;
+}
+
+.popular-list .popular-card-description{
+    flex-direction: column;
+    padding: 1rem; 
+    flex-basis: 100%; /*图片尺寸由大小不一变成一样大*/  
+}
+
+.popular-title{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+
+
+@media(max-width:900px){
+
+    .popular-list{
+        order: -1;
+        background-color: pink;/*Test*/
+    }
+
+    .popular-list .popular-card{
+        width: 100%;
+        height: 10rem;
+    }
+}
