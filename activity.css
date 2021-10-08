@@ -4,6 +4,7 @@
     flex:1 1 auto;
     padding: 2rem;
     gap: 3rem;
+    height: 500px;
 }
 
 .activities h3{
@@ -23,17 +24,17 @@
     flex:1 1 auto;
     flex-direction: column;
     border-radius: 22px;
-    box-shadow: 0 0 10px;
-    height: 100%;
+    box-shadow: 0 0 5px;
+    /*height: 100%;*/
 }
- 
+
 .col-two{
     flex: 1 1 auto;
     gap:1rem;
 }
 
 .activity-card-image{
-    height: 100%;
+    height: calc(100% - 3rem);
 }
 
 .activity-card-image img{
@@ -44,14 +45,27 @@
 }
 
 .activity-card-title{
-    height: calc(100%-1rem);/*Parse Error dans validator*/
-    padding: 2rem;
+    height: 3rem;
+    margin: 1rem;
     font-weight: bold; 
 }
 
 .col-four{
     flex: 1 1 auto;
     gap:1rem;
+}
+
+
+.activity-card-60{
+    height: 55%;
+}
+
+.activity-card-40{
+    height: 35%;
+}
+
+.activity-card-50{
+    height: 45%;
 }
 
 .activity-card:hover{

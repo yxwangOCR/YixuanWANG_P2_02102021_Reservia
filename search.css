@@ -3,6 +3,11 @@
     padding: 2rem 2rem;
 }
 
+
+.text-details{
+    margin: 20px 0; 
+}
+
 .search-bar{
 display: flex;
 padding: 1rem 0;

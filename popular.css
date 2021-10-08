@@ -22,7 +22,7 @@
     margin: 1rem auto;
     background-color: white;
     border-radius: 22px;
-    box-shadow: 0 0 10px;/*offset-x | offset-y | blur-radius*/
+    box-shadow: 0 0 5px;/*offset-x | offset-y | blur-radius*/
 }
 
 .popular-card:hover{
@@ -36,9 +36,14 @@
 }
 
 .popular-card-description{
+    display: flex;
     flex-direction: column;
     padding: 1rem; 
     flex-basis: 100%; /*图片尺寸由大小不一变成一样大*/
+}
+
+.ratings{
+    margin-top: auto;
 }
 
 @media(max-width:900px){
