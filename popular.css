@@ -1,60 +1,147 @@
 /*Les plus polulaires*/
+
+
 .popular-title{
     display: flex;
     justify-content: space-between;
     padding:1rem;
 }
-
+/*
 .popular-list{
-    background-color: #f2f2f2;
-    height: 100%;/*原先的第三个图片尺寸很大，设定后与前两个尺寸一样*/
-    display: flex;
-    flex-direction: column;
+   /* background-color: #f2f2f2;
+  /*  height: 100%;/*三个卡片占满整个liste高度。原先的第三个图片尺寸很大，设定后与前两个尺寸一样*/ /*这里原来是height:100%*/
+  /*
     padding: 1rem 2rem;
     border-radius: 22px;
-}
-.popular-card{
-    width: 100%;
-    height: 10rem;
+    flex-basis: 33%;
+}*/
+
+.popular-list{
+    background-color:#f2f2f2;
     display: flex;
-    flex-basis: 33.5%; /*缩小时，三个cartes占满整个liste的高度*/
-    padding: 0.3rem;
-    margin: 1rem auto;
-    background-color: white;
+    flex-direction: column;
+    height: auto;/*popular list与housing list高度相同*/
+    padding:2rem;
     border-radius: 22px;
-    box-shadow: 0 0 5px;/*offset-x | offset-y | blur-radius*/
+    flex-basis: 33%;
 }
 
-.popular-card:hover{
+.popular-card-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.popular-card-list a{
+    background-color: white;
+    border-radius: 22px;
+    border: 3px solid white;
+    box-shadow: 0 0 5px gray; 
+    color: inherit;
+    /*
+    flex-basis: 100%;
+    padding: 0.3rem;
+    margin: 1rem auto;
+    gap:1rem;
+    width: 100%;*/
+}
+
+.popular-card-list a:hover{
     transform: scale(1.02);
+}
+    
+.popular-card{
+    display: flex;
+    width: 100%;
+    height: 10rem;
 }
 
 .popular-card img{
-    width: 40%;
+    /*width: 100%;
+    height: 10rem;*/
+    width: 50%;
+    height: 100%;
     border-radius: 22px 0 0 12px;
     object-fit: cover;
 }
 
 .popular-card-description{
-    display: flex;
+    width: 50%;
     flex-direction: column;
-    padding: 1rem; 
-    flex-basis: 100%; /*图片尺寸由大小不一变成一样大*/
+    padding: 1rem;
+    font-size: 0.9rem; 
+    
+    /*flex-basis: 100%; /*图片尺寸由大小不一变成一样大*/
 }
+
+
+/*
+.popular-card{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-basis: 33.5%; 
+    padding: 0.3rem;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0 0 5px;
+}
+*/
+/*缩小时，三个cartes占满整个liste的高度*/
+
 
 .ratings{
     margin-top: auto;
 }
 
+@media (max-width:1135px){
+   .popular-card-link{
+       height: auto;
+   }
+   .popular-card{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       height: 35rem;
+   }
+   .popular-card img{
+    width: 100%;
+    height: 80%;
+    border-radius: 22px 22px 0 0;
+    object-fit: cover;
+}
+.popular-card-description{
+    width: 100%;
+     }
+
+}
+
+
 @media(max-width:900px){
-    .popular{
+    .popular-list{
         order: -1; 
     }
-    .popular-list{
+    
+    /*.popular-list{
         border-radius: 0;
-    }
+    }*/
 
-    .popular-card img{
-        height: 16rem; /*缩小后，图片尺寸高度相同*/
-    }
+    
+    .popular-card{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 15rem;
+        }
+        .popular-card img{
+         width: 100%;
+         height: 80%;
+         border-radius: 22px 22px 0 0;
+         object-fit: cover;
+     }
+    
 }
