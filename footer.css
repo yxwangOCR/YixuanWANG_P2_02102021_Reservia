@@ -32,14 +32,3 @@ footer {
 }
 
 
-@media (max-width:900px){
-    .footer-list{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .about, .service, .assistance{
-        width: 100%;
-    }
-}

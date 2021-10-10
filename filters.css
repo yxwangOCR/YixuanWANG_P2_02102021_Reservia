@@ -31,7 +31,7 @@
     height: 3rem;
     padding: 1rem;
     border-radius: 50%; /*a cercle*/
-    margin: -2px;/*隐藏圆形外的浅灰色边框*/
+    margin: -2px;/*Hide the light gray border outside the circle / 隐藏圆形外的浅灰色边框*/
 }
 
 /*information + icon info*/

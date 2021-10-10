@@ -1,11 +1,13 @@
 /*Activité à Marseille*/
+
+#activities-list{
+    padding: 2rem 0;
+}
+
 .activity-title{
     display: flex;
-    justify-content: space-between;
-    padding: 3rem 0 0 2rem;
-    /*
-    margin-left: 2rem;
-    margin-top: 2rem;*/
+    padding: 2rem;
+    /*2rem 0 0 2rem*/;
 }
 
 .activities-container{
@@ -13,100 +15,59 @@
     padding: 2rem;
     gap: 1rem;
     height: 650px;
-    /*flex:1 1 auto;*/
 }
 
-/*第一栏和第三栏*/
+/**********col-1 & col-3**********/
 .activities-col{
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
     width: 45%;
-    /*height: 100%;*/
 }
-
 .activity-card-link{
     color: inherit;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
     height: 100%;
-    
 }
-
-
 .activity-card{
-    display: flex;
-    flex:1 1 auto;
-    flex-direction: column;
     border-radius: 22px;
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 5px gray;
     height: 100%;
 }
-
-/*第二栏*/
+/**********col-2**********/
 .col-two{
-    display: flex;
-    flex-direction: column;
-   justify-content: space-between;
     gap:1rem;
     height: 100%;
-    
 }
-
-/*第二栏上*/
+/*col-2-upper*/
 .activity-card-60-link{
     color: inherit;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
     height: 55%;
 }
-
 .activity-card-60{
     height: 100%;
 }
-
-/*第二栏下*/
+/*col-2-lower*/
 .activity-card-40-link{
     color: inherit;
-    display: flex;
-    flex-direction: column;
     flex: 1 1 auto;
     height: 35%;
 }
-
 .activity-card-40{
     height: 100%;
 }
-
-
-
-/*第四栏*/
+/**********col-4**********/
 .col-four{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 1 auto;
     gap: 1rem;
-    height: 100%;
 }
-
 .activity-card-50-link{
     color: inherit;
-    display: flex;
-    flex-direction: column;
     flex: 1 1 auto;
     height: 45%;
 }
-
 .activity-card-50{
     height: 100%;
 }
 
-
-
-/*Title和images*/
+/*********Card title & images*********/
 .activity-card-title{
     height: 4rem;
     padding: 1rem;
@@ -119,7 +80,7 @@
 }
 
 .activity-card-image img{
-    border-radius: 12px 12px 0 0;
+    border-radius: 22px 22px 0 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -127,38 +88,5 @@
 
 .activity-card:hover{
     transform: scale(1.02);
-}
-
-
-@media (max-width:900px){
-
-    #activities-list {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .activity-title{
-        padding: 2rem;
-    }
-
-    .activities-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 auto;
-        gap: 1rem;
-        height: auto;
-    }
-
-    .activities-col, .col-two, .col-four{
-        width: 100%;
-    }
-
-    .activity-card-image{
-       width: 100%;
-       height: 12rem;
-       object-fit:cover;
-    }
 }
 

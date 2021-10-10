@@ -13,7 +13,6 @@ nav a{
 
 nav a:hover{
     border-top: 0.3rem solid #0065FC;
-    /*由于之前已经定义了width和style，这里可以只写color，前两个valeur可以省略*/
     color: #0065FC;
 }
 
@@ -31,20 +30,4 @@ nav{
 .inscription{
     color: #0065FC;
     font-weight: bold;  
-}
-
-@media(max-width:900px){ /*屏幕缩小到900px后sub-menu下移，inscription保持在上面*/
-    .sub-menu{
-        flex-basis: 100%;
-        order: 1;
-    }  
-    .sub-menu a{
-        flex-basis: 50%;
-        text-align: center;
-        border-bottom: 0.3rem solid #DEEBFF;
-    }
-    .sub-menu a:hover{ /*屏幕缩小到900px后，sub-menu的蓝线下移*/
-        border-top: 0.3rem solid white;
-        border-bottom: 0.3rem solid #0065FC;
-    }
 }
