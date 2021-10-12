@@ -134,11 +134,15 @@
 
 /*Breakpoint mobile = 350px*/
 @media(max-width:350px){
+    .activities-container{
+        padding: 1rem;
+    }
     .activity-title{
         padding: 0 1rem;
         font-size: 0.9rem;
     }
     .activity-card-title{
         font-size: 0.75rem;
+        height: 3rem;
     }
 }

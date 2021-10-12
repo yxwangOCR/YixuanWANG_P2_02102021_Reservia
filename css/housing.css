@@ -98,7 +98,7 @@
     .housing-title, .housing-list a{
         font-size: 0.9rem;
     }
-    .housing-card-description{
+    .housing-card-description h4, p{
         font-size: 0.75rem;
     }
 }

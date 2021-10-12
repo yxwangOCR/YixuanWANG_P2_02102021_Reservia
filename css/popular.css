@@ -98,7 +98,7 @@
     .popular-list, .housing-list, .activities-container{
         padding: 1rem;
     }
-    .popular-card-description{
+    .popular-card-description h4, p{
         font-size: 0.75rem;
     }
     .popular-title{
