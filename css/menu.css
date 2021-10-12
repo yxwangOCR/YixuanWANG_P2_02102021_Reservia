@@ -51,7 +51,15 @@ nav{
     }
 }
 
-/*Breakpoint mobile = 295px*/
+/*Breakpoint Mobile*/
+/*Breakpoint = 314px*/
+@media(max-width:314px){
+    .sub-menu a{
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+/*Breakpoint = 295px*/
 @media(max-width:295px){
     #logo {
         width: 100%;
@@ -63,21 +71,29 @@ nav{
         justify-content: center;
         margin: 0 auto;
     }
+    nav a {
+        padding: 1rem;
+    }
 }
-
-/*Breakpoint = 224px*/
-@media(max-width:224px){
-    .sub-menu{
-        font-size: 0.65rem;
+/*Breakpoint = 230px*/
+@media(max-width:230px){
+    .sub-menu a{
+        font-size: 0.7rem;
+        padding: 0.5rem;
     }
     .search-tags h1, p, .filter-list h2, .filter span{
         font-size: 0.75rem;
     }
     ::placeholder{
-     color: transparent; /*缩小时搜索栏中的字消失*/
-    }
+        color: transparent; /*缩小时搜索栏中的字消失*/
+       }
     .housing-title, .popular-title, .activity-title, .housing-list a{
-         font-size: 0.6rem;
-     }
- }
- 
+        font-size: 0.5rem;
+    }
+    .popular-card-description h4, p{
+        font-size: 0.65rem;
+}
+    .ratings, .housing-card-description i{
+        font-size: 0.5rem;
+    }
+}
