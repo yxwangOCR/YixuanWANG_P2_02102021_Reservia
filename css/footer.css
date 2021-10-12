@@ -31,4 +31,22 @@ footer {
     transform: none;
 }
 
+/*****Media Query*****/
+/*Breakpoint = 960px*/
+@media(max-width:960px){
+       .footer-list{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+        .about, .service, .assistance{
+        width: 100%;
+    }
+}
 
+/*Breakpoint mobile = 350px*/
+@media(max-width:350px){
+    .footer-list{
+        font-size: 0.8rem;
+    }
+}
