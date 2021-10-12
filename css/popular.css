@@ -68,24 +68,28 @@
         order: -1; 
         border-radius: 0;
     }
-    .popular-card{
-        width: 100%;
-        
-    }
     .popular-card img{
-        width: calc(100% - 13rem);
-        height: 100%;
+        width: 60%;
         border-radius: 22px 0 0 22px;
     }
     .popular-card-description{
-        padding: 1rem;
-        width: 12rem;
+        width: 40%;
     }
     .popular-card-list{
         gap: 1rem;
     }
     .popular-title{
         padding: 1rem 0;
+    }
+}
+
+/*Breakpoint tablette = 768px*/
+@media(max-width:768px){
+    .popular-card img{
+        width: 40%;
+    }
+    .popular-card-description{
+        width: 60%;
     }
 }
 
