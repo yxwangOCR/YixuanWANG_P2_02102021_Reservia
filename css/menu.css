@@ -31,3 +31,53 @@ nav{
     color: #0065FC;
     font-weight: bold;  
 }
+
+/*Media Query*/
+/*Breakpoint = 960px*/
+@media(max-width:960px){ 
+    /*屏幕缩小到960px后sub-menu下移，inscription保持在上面*/
+    .sub-menu{
+        flex-basis: 100%;
+        order: 1;
+    }  
+    .sub-menu a{
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 0.3rem solid #DEEBFF;
+    }
+    .sub-menu a:hover{ /*屏幕缩小到960px后，sub-menu的蓝线下移*/
+        border-top: 0.3rem solid white;
+        border-bottom: 0.3rem solid #0065FC;
+    }
+}
+
+/*Breakpoint mobile = 295px*/
+@media(max-width:295px){
+    #logo {
+        width: 100%;
+        height: 4rem;
+    }
+    .inscription{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+/*Breakpoint = 224px*/
+@media(max-width:224px){
+    .sub-menu{
+        font-size: 0.65rem;
+    }
+    .search-tags h1, p, .filter-list h2, .filter span{
+        font-size: 0.75rem;
+    }
+    ::placeholder{
+     color: transparent; /*缩小时搜索栏中的字消失*/
+    }
+    .housing-title, .popular-title, .activity-title, .housing-list a{
+         font-size: 0.6rem;
+     }
+ }
+ 

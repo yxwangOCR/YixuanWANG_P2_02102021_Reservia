@@ -65,3 +65,40 @@
     padding-top: 2rem;
 }
 
+/*Media Query*/
+/*Breakpoint = 1135px*/
+@media (max-width:1135px){
+    .housing-card-list{
+        gap: 1rem;
+    }
+}
+
+/*Breakpoint = 960px*/
+@media(max-width:960px){
+     #recommendation-list{
+        flex-direction: column;
+    }
+    .housing-list{
+        background-color: white;
+        flex-direction: column;
+    }
+    .housing-card-list{
+        flex-direction: column;
+    }
+    .housing-card-description{
+        padding: 1rem; 
+    }
+    .housing-title{
+        padding: 1rem 0;
+    }
+}
+
+/*Breakpoint mobile = 350px*/
+@media(max-width:350px){
+    .housing-title, .housing-list a{
+        font-size: 0.9rem;
+    }
+    .housing-card-description{
+        font-size: 0.75rem;
+    }
+}

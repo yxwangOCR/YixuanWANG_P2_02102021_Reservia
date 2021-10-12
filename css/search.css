@@ -39,3 +39,14 @@
     opacity: 0.8;
     transform: scale(1.02);
 }
+
+/*Breakpoint mobile = 350px*/
+@media(max-width:350px){
+    .search-bar .search-text{
+        display: none;
+    }
+    .fa-search{
+        display: inline;
+        color: white;
+    }
+}
