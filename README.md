@@ -1,30 +1,29 @@
-# projet2_reservia
+# Project 2 OpenClassrooms - Transform a mockup into a website with HTML & CSS
 
-**Fonctionnalités:**</br>
-</br>
-1. Les usagers pourront rechercher des hébergements dans la ville de leur choix. </br>
-2. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.</br>
-3. Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité.Pour l’instant les liens seront vides.</br>
-4. Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol. On peut choisir l’effet le plus approprié.</br>
-5. Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.</br>
-</br></br>
+A website that allows users to find accommodation and activities in the city of their choice.
+The interface of the website must be integrated with HTML and CSS.
 
-**Contraintes techniques:**</br>
-</br>
-1. Deux maquettes : l’une desktop et l’autre mobile.</br>
-2. Le site devra également être adapté aux tablettes.</br> 
-3. Sur ce support, on est libre de faire les adaptations nécessaires avec la mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante. On peut choisir les breakpoints appropriés.</br>
-4. Choisir le format le plus adapté par rapport à la résolution et au temps de chargement.</br>
-5. Les icônes proviennent de la bibliothèque Font Awesome.</br> 
-6. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.</br>
-7. La police du site est Raleway.</br> 
-</br>
+[![HTML](https://img.shields.io/badge/HTML-HyperText%20Markup%20Language-orange)](https://developer.mozilla.org/fr/docs/Learn/HTML)
+[![CSS](https://img.shields.io/badge/CSS-Cascading%20Style%20Sheets-blue)](https://developer.mozilla.org/fr/docs/Web/CSS)
 
-**Maquette Desktop:**</br> 
-![Desktop - 1](https://user-images.githubusercontent.com/91176159/135743846-93f311d8-6f7b-4667-bde2-ded05a9b355f.png)
-</br>
-</br>
-</br> 
-**Maquette Mobile:**</br> 
+## Features
+
+- The search field is an input field, which can be edited by the user. However, at this stage, the search button will not be functional.
+- Each accommodation or activity card will have to be fully clickable, for the moment the links will be disabled.
+- Filters will not be functional for this version, however, they should appear different on hover. 
+- In the navigation menu, the links "Hébergements" and "Activités" are anchors that must lead to the sections of the page.
+
+## Technical constraints
+- Two layouts: desktop and mobile.
+- The website should also be adapted to tablets.
+- You are free to make the necessary adaptations to the layout, as long as no element is cut and the text is sufficiently large. 
+- You can choose the appropriate breakpoints.
+- Choose the most suitable format in terms of resolution and loading time.
+- The icons come from the Font Awesome library.
+- The Color Chart : #0065FC, #DEEBFF and #F2F2F2.
+- The Font : Raleway.
+## Maquette Desktop
+![Logo](https://user-images.githubusercontent.com/91176159/135743846-93f311d8-6f7b-4667-bde2-ded05a9b355f.png)
+
+## Maquette Mobile
 ![iPhone 8 - 1](https://user-images.githubusercontent.com/91176159/135743864-523f10cd-3b95-43eb-b743-89987d4c637d.png)
-
