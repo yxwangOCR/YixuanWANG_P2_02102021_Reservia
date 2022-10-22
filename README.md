@@ -10,20 +10,24 @@ The interface of the website must be integrated with HTML and CSS.
 
 - The search field is an input field, which can be edited by the user. However, at this stage, the search button will not be functional.
 - Each accommodation or activity card will have to be fully clickable, for the moment the links will be disabled.
-- Filters will not be functional for this version, however, they should appear different on hover. 
+- Filters will not be functional for this version, however, they should appear different on hover.
 - In the navigation menu, the links "Hébergements" and "Activités" are anchors that must lead to the sections of the page.
 
 ## Technical constraints
+
 - Two layouts: desktop and mobile.
 - The website should also be adapted to tablets.
-- You are free to make the necessary adaptations to the layout, as long as no element is cut and the text is sufficiently large. 
+- You are free to make the necessary adaptations to the layout, as long as no element is cut and the text is sufficiently large.
 - You can choose the appropriate breakpoints.
 - Choose the most suitable format in terms of resolution and loading time.
 - The icons come from the Font Awesome library.
 - The Color Chart : #0065FC, #DEEBFF and #F2F2F2.
 - The Font : Raleway.
-## Maquette Desktop
+
+## Mockup on Desktop
+
 ![Logo](https://user-images.githubusercontent.com/91176159/135743846-93f311d8-6f7b-4667-bde2-ded05a9b355f.png)
 
-## Maquette Mobile
+## Mockup on Mobile
+
 ![iPhone 8 - 1](https://user-images.githubusercontent.com/91176159/135743864-523f10cd-3b95-43eb-b743-89987d4c637d.png)
